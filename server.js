@@ -52,7 +52,7 @@ db.on('open', function() {
 // ====================
 //       ROUTING
 // ====================
-var router = require('./controllers/controller');
+var router = require('./routes/route');
 app.use('/', router);
 
 // ====================
