@@ -1,0 +1,16 @@
+body { 
+    padding-top: 56px; 
+    background-color: #003e79
+  }
+  
+.jumbotron {
+    font-family: "Times New Roman";
+    background-image:url("/img/jumboBg.jpg");
+    background-size: cover;
+    background-position: bottom;
+  }
+  
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  }
+  

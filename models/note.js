@@ -1,27 +1,13 @@
-// ./models/Note.js
 
-// ====================
-//    DEPENDENCIES
-// ====================
-const mongoose = require('mongoose');
+var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
-// ====================
-//        SCHEMA
-// ====================
-var NoteSchema = new Schema ({
-    user : {
-        type: String,
-        required: true
-    },
-    body : {
-        type: String,
-        required: true
-    }
+// Using the Schema constructor, create a new NoteSchema object
+var NoteSchema = new Schema({
+  body: String
 });
 
-// Create the model
-var Note = mongoose.model('Note', NoteSchema);
+// This creates our model from the above schema using mongoose's model method
+var Note = mongoose.model("Note", NoteSchema);
 
-// Export the model
 module.exports = Note;
