@@ -80,7 +80,7 @@ module.exports = function (app) {
         let hbsObject = {
           articles: dbArticle
         };
-        res.render("save", hbsObject);
+        res.render("saved", hbsObject);
       })
       .catch(function (err) {
         res.json(err);
